@@ -7,6 +7,7 @@
 //
 
 #import "PlaylistDetailViewController.h"
+#import "Playlist.h"
 
 @interface PlaylistDetailViewController ()
 
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    if(self.playlist){
+        self.playlistCoverImage.image  = self.playlist.playlistIconLarge;
+        self.playlistCoverImage.backgroundColor = self.playlist.playlistBackgroundColor;
+        self.playlistTitle.text = self.playlist.playlistTitle;
+        self.playlistDescription.text = self.playlist.playlistDescription;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
