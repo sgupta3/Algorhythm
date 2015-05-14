@@ -22,6 +22,9 @@
         self.playlistCoverImage.backgroundColor = self.playlist.playlistBackgroundColor;
         self.playlistTitle.text = self.playlist.playlistTitle;
         self.playlistDescription.text = self.playlist.playlistDescription;
+        self.playlistArtist0.text = self.playlist.playlistArtists[0];
+        self.playlistArtist1.text = self.playlist.playlistArtists[1];
+        self.playlistArtist2.text = self.playlist.playlistArtists[2];
     }
     
 }
@@ -30,6 +33,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+
 
 
 @end
